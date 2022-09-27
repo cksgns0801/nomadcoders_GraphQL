@@ -6,7 +6,7 @@ const typeDefs = gql`
         id: ID!
         username: String!
         firstName: String!
-        lastName: String!
+        lastName: String
     }
     type Tweet {
         id: ID!
