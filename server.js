@@ -33,8 +33,14 @@ const typeDefs = gql`
         username: String!
         firstName: String!
         lastName: String!
+        """
+        firstName + lastName
+        """
         fullName: String!
     }
+    """
+    test 
+    """
     type Tweet {
         id: ID!
         text: String!
@@ -47,6 +53,9 @@ const typeDefs = gql`
     }
     type Mutation {
         postTweet(text: String!, userId: ID!): Tweet!
+        """
+        delete tweet
+        """
         deleteTweet(id: ID!): Boolean!
     }
 `;
